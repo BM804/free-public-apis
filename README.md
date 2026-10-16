@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://bm804.github.io/free-public-apis/">
-    <img src="assets/readme-banner.png" alt="A connected map of public data, APIs, books, weather, science, finance, and AI" width="100%">
+    <img src="docs/assets/api-network-hero.png" alt="A connected map of public data, APIs, books, weather, science, finance, and AI" width="100%">
   </a>
 </p>
 

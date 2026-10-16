@@ -5,6 +5,16 @@ const auth = document.querySelector("#auth");
 const count = document.querySelector("#result-count");
 let apis = [];
 
+const categoryIcons = {
+  "AI & LLM": "🤖", Animals: "🐾", Books: "📚", Climate: "🌍", Culture: "🏛️",
+  Design: "🎨", "Developer Tools": "🧰", Economics: "📈", Entertainment: "🎭",
+  Environment: "🌿", Finance: "💹", Food: "🍋", Games: "🎮", Geocoding: "📍",
+  Geography: "🌐", Knowledge: "💡", Maps: "🗺️", Media: "📷", Music: "🎵",
+  Nature: "🌱", Networking: "🔗", News: "📰", "Open Data": "📊", Research: "🔬",
+  Science: "🧪", Space: "🪐", Technology: "⚙️", Testing: "🧩", Utilities: "✨",
+  Weather: "🌦️",
+};
+
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;",
@@ -23,10 +33,12 @@ function render() {
   });
   count.textContent = results.length + (results.length === 1 ? " API found" : " APIs found");
   grid.innerHTML = results.map((api) =>
-    '<article class="api-card"><span class="tag">' + escapeHtml(api.category) + '</span>'
+    '<article class="api-card"><div class="card-top"><span class="category-icon" aria-hidden="true">'
+    + (categoryIcons[api.category] || "✦") + '</span><span class="tag">' + escapeHtml(api.category) + '</span></div>'
     + '<h3>' + escapeHtml(api.name) + '</h3><p>' + escapeHtml(api.description) + '</p>'
-    + '<p class="key-tag">API key: ' + escapeHtml(api.authentication) + ' · Checked '
-    + escapeHtml(api.checked_on) + '</p><div class="card-links"><a href="'
+    + '<p class="key-tag"><span class="key-status key-status-' + escapeHtml(api.authentication.toLowerCase()) + '">'
+    + escapeHtml(api.authentication) + ' key</span><span>Checked ' + escapeHtml(api.checked_on) + '</span></p>'
+    + '<div class="card-links"><a href="'
     + escapeHtml(api.docs_url) + '" target="_blank" rel="noopener noreferrer">Official docs ↗</a>'
     + '<a href="' + escapeHtml(api.pricing_or_limits_url)
     + '" target="_blank" rel="noopener noreferrer">Pricing &amp; limits ↗</a></div></article>'
@@ -44,6 +56,7 @@ async function start() {
       '<option value="' + escapeHtml(item) + '">' + escapeHtml(item) + '</option>'
     ).join(""));
     document.querySelector("#total-count").textContent = apis.length;
+    document.querySelector("#directory-total").textContent = apis.length;
     document.querySelector("#category-count").textContent = categories.length;
     render();
   } catch {
@@ -55,4 +68,11 @@ async function start() {
 search.addEventListener("input", render);
 category.addEventListener("change", render);
 auth.addEventListener("change", render);
+document.querySelectorAll(".hero-topics [data-category]").forEach((button) => {
+  button.addEventListener("click", () => {
+    category.value = button.dataset.category;
+    render();
+    document.querySelector("#directory").scrollIntoView({ behavior: "smooth" });
+  });
+});
 start();

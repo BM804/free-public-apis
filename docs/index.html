@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"Free Public APIs Directory","description":"A searchable directory of free public APIs with official documentation and access notes.","url":"https://bm804.github.io/free-public-apis/","publisher":{"@type":"Person","name":"BM804"}}
   </script>
@@ -30,12 +30,19 @@
       <h1>Find the right <span>free API</span> for your next project.</h1>
       <p class="intro">Explore public APIs for AI and LLMs, weather, maps, books, research, finance, open data, testing, and more. Every listing points to provider docs and access notes.</p>
       <a class="button" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
+      <div class="hero-topics" aria-label="Popular categories">
+        <button type="button" data-category="AI &amp; LLM"><span aria-hidden="true">🤖</span> AI &amp; LLM</button>
+        <button type="button" data-category="Weather"><span aria-hidden="true">🌦️</span> Weather</button>
+        <button type="button" data-category="Books"><span aria-hidden="true">📚</span> Books</button>
+        <button type="button" data-category="Finance"><span aria-hidden="true">💹</span> Finance</button>
+        <button type="button" data-category="Maps"><span aria-hidden="true">🗺️</span> Maps</button>
+      </div>
       <div class="stats"><div><strong id="total-count">76</strong><span>catalog entries</span></div><div><strong id="category-count">—</strong><span>categories</span></div><div><strong>Open</strong><span>source catalog</span></div></div>
     </div>
   </header>
   <main>
     <section id="directory" class="section">
-      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Browse free public APIs</h2><p>Search by name, topic, or category. Filter APIs by whether they need an API key.</p></div></div>
+      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Browse free public APIs</h2><p>Search by name, topic, or category. Filter APIs by whether they need an API key.</p></div><span class="directory-count"><span aria-hidden="true">✦</span> <strong id="directory-total">76</strong> hand-picked APIs</span></div>
       <div class="filters">
         <label class="search-label" for="search">Search APIs<input id="search" type="search" placeholder="Try weather, books, geocoding…" autocomplete="off"></label>
         <label for="category">Category<select id="category"><option value="">All categories</option></select></label>
@@ -66,6 +73,6 @@ print(response.json()["current"])</code></pre>
     </section>
   </main>
   <footer><a class="brand" href="./">Free APIs<span>.</span></a><p>Curated with care by <a href="https://github.com/BM804">BM804</a>. No guarantee of unlimited or permanent access.</p><p><a href="https://github.com/BM804/free-public-apis">Source code</a> · <a href="https://github.com/BM804/free-public-apis/blob/main/LICENSE">MIT License</a> · <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google Search guidance</a></p></footer>
-  <script src="app.js?v=2" defer></script>
+  <script src="app.js?v=3" defer></script>
 </body>
 </html>
