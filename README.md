@@ -11,10 +11,13 @@
 [![API catalog](https://img.shields.io/badge/catalog-76%20APIs-2563eb)](docs/data/apis.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Community catalog](https://img.shields.io/badge/explore-community%20API%20list-8b5cf6?logo=github)](https://github.com/public-apis/public-apis)
 
 **Looking for free APIs to use in a project?** This human-curated directory helps developers find public APIs that offer no-cost access, an open-data endpoint, or a clearly identified free tier. Each entry links to provider documentation and a page describing pricing, quotas, or usage policy when available.
 
 **Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](docs/data/apis.json) · [Python search tool](scripts/search_apis.py)
+
+<p align="center"><strong>Need an even wider list?</strong> Explore the community-maintained <a href="https://github.com/public-apis/public-apis">public-apis/public-apis</a> directory too.</p>
 
 **Code examples:** [Full setup and run guide for 18 programming languages](examples/README.md). Use the direct links below to open each example on GitHub.
 
@@ -116,6 +119,29 @@ I’m preparing a separate directory of free public dataset sources, with source
 
 
 For the full searchable list and exact provider links, see [docs/data/apis.json](docs/data/apis.json) or visit the [directory site](https://bm804.github.io/free-public-apis/).
+
+## Explore the community API directory
+
+The [public-apis/public-apis repository](https://github.com/public-apis/public-apis) is a much broader, community-maintained index. Its README organizes API discovery by topic and also includes APILayer products and MCP server listings. Browse a few useful sections:
+
+<table>
+  <tr>
+    <td align="center"><strong>🐾 Animals</strong><br><a href="https://github.com/public-apis/public-apis#animals">Explore APIs ↗</a></td>
+    <td align="center"><strong>📚 Books</strong><br><a href="https://github.com/public-apis/public-apis#books">Explore APIs ↗</a></td>
+    <td align="center"><strong>📍 Geocoding</strong><br><a href="https://github.com/public-apis/public-apis#geocoding">Explore APIs ↗</a></td>
+    <td align="center"><strong>🏛️ Government</strong><br><a href="https://github.com/public-apis/public-apis#government">Explore APIs ↗</a></td>
+  </tr>
+  <tr>
+    <td align="center"><strong>🤖 Machine Learning</strong><br><a href="https://github.com/public-apis/public-apis#machine-learning">Explore APIs ↗</a></td>
+    <td align="center"><strong>💹 Finance</strong><br><a href="https://github.com/public-apis/public-apis#finance">Explore APIs ↗</a></td>
+    <td align="center"><strong>📊 Open Data</strong><br><a href="https://github.com/public-apis/public-apis#open-data">Explore APIs ↗</a></td>
+    <td align="center"><strong>🧪 Science &amp; Math</strong><br><a href="https://github.com/public-apis/public-apis#science--math">Explore APIs ↗</a></td>
+  </tr>
+</table>
+
+<p align="center"><a href="https://github.com/public-apis/public-apis/blob/master/LICENSE">Upstream license: MIT</a> · <a href="https://github.com/public-apis/public-apis/blob/master/CONTRIBUTING.md">Contribute to the community list</a></p>
+
+This project keeps its own smaller catalog focused on entries with clear provider documentation and explicit access notes. The community list is a useful place to discover more options; a listing does not guarantee that an API is currently free, unlimited, or suitable for commercial use. Always check the provider’s terms and pricing before integrating it.
 
 ## What “free” means here
 
