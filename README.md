@@ -2,7 +2,7 @@
 
 > Find free APIs for weather, maps, books, research, finance, testing, open data, and more—with direct documentation and honest notes about keys, quotas, and terms.
 
-[![API catalog](https://img.shields.io/badge/catalog-69%20APIs-2563eb)](docs/data/apis.json)
+[![API catalog](https://img.shields.io/badge/catalog-76%20APIs-2563eb)](docs/data/apis.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
@@ -10,7 +10,7 @@
 
 **Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](docs/data/apis.json) · [Python search tool](scripts/search_apis.py)
 
-**Code examples:** [Use a public API locally in 18 programming languages](examples/README.md). Each language folder contains a runnable example and the guide lists setup requirements and run commands.
+**Code examples:** [Full setup and run guide for 18 programming languages](examples/README.md). Use the direct links below to open each example on GitHub.
 
 ## Quick start
 
@@ -28,13 +28,53 @@ response.raise_for_status()
 print(response.json()["current"])
 ```
 
+## Programming language examples
+
+Each link opens the source file in GitHub. See the [examples guide](examples/README.md) for prerequisites and local run commands.
+
+| Language | Example |
+|---|---|
+| Bash | [main.sh](examples/bash/main.sh) |
+| C | [main.c](examples/c/main.c) |
+| C++ | [main.cpp](examples/cpp/main.cpp) |
+| C# | [Program.cs](examples/csharp/Program.cs) |
+| Dart | [main.dart](examples/dart/main.dart) |
+| Go | [main.go](examples/go/main.go) |
+| Java | [Main.java](examples/java/src/main/java/Main.java) |
+| JavaScript | [main.mjs](examples/javascript/main.mjs) |
+| Kotlin | [Main.kt](examples/kotlin/Main.kt) |
+| Perl | [main.pl](examples/perl/main.pl) |
+| PHP | [main.php](examples/php/main.php) |
+| PowerShell | [main.ps1](examples/powershell/main.ps1) |
+| Python | [main.py](examples/python/main.py) |
+| R | [main.R](examples/r/main.R) |
+| Ruby | [main.rb](examples/ruby/main.rb) |
+| Rust | [main.rs](examples/rust/src/main.rs) |
+| Swift | [main.swift](examples/swift/main.swift) |
+| TypeScript | [main.ts](examples/typescript/main.ts) |
+
+## Free AI and LLM APIs
+
+These providers currently document a no-cost tier, trial access, or credits. Limits and eligibility differ, so check each provider’s current terms before building on it.
+
+| Provider | API docs | Free access details |
+|---|---|---|
+| Google Gemini | [Gemini API docs](https://ai.google.dev/gemini-api/docs) | [Free-tier pricing and model quotas](https://ai.google.dev/gemini-api/docs/pricing) |
+| GroqCloud | [Quickstart](https://console.groq.com/docs/quickstart) | [Free plan rate limits](https://console.groq.com/docs/rate-limits) |
+| OpenRouter | [Quickstart](https://openrouter.ai/docs/quickstart) | [Pricing and free models](https://openrouter.ai/pricing/) |
+| Cloudflare Workers AI | [Workers AI docs](https://developers.cloudflare.com/workers-ai/) | [Free daily allowance and pricing](https://developers.cloudflare.com/workers-ai/platform/pricing/) |
+| Cohere | [API overview](https://docs.cohere.com/reference/about) | [Trial API rate limits](https://docs.cohere.com/v2/docs/rate-limits) |
+| Hugging Face | [Inference Providers guide](https://huggingface.co/docs/inference-providers/index) | [Credits and pricing](https://huggingface.co/docs/inference-providers/en/pricing) |
+| Mistral | [First API request](https://docs.mistral.ai/getting-started/quickstarts/developer/first-api-request) | [API key and free experimentation access](https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key) |
+
 ## Browse by category
 
-The catalog currently includes **69 entries across 29 categories**. The directory website can filter by name, category, or whether a key is needed.
+The catalog currently includes **76 entries across 30 categories**. The directory website can filter by name, category, or whether a key is needed.
 
 | Category | APIs |
 |---|---|
 | Animals | Dog CEO API, The Cat API |
+| AI & LLM | Google Gemini API, GroqCloud, OpenRouter Free Models, Cloudflare Workers AI, Cohere Trial API, Hugging Face Inference Providers, Mistral API |
 | Books | Google Books, Google Books Volumes, Gutendex, Open Library, Open Library Covers API, Open Library Search |
 | Climate | NOAA Climate Data Online, Open-Meteo Climate |
 | Culture | Europeana, Internet Archive |
@@ -63,6 +103,10 @@ The catalog currently includes **69 entries across 29 categories**. The director
 | Testing | DummyJSON, httpbin, JSONPlaceholder, ReqRes |
 | Utilities | QRServer |
 | Weather | National Weather Service, NOAA Weather API, Open-Meteo, Open-Meteo Forecast, Open-Meteo Marine |
+
+## Free dataset sources — coming soon
+
+I’m preparing a separate directory of free public dataset sources, with source links and notes about licensing, attribution, and access. Follow the [website’s dataset section](https://bm804.github.io/free-public-apis/#datasets) for updates.
 
 
 For the full searchable list and exact provider links, see [docs/data/apis.json](docs/data/apis.json) or visit the [directory site](https://bm804.github.io/free-public-apis/).
