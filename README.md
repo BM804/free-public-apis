@@ -1,5 +1,11 @@
 # Free Public APIs Directory
 
+<p align="center">
+  <a href="https://bm804.github.io/free-public-apis/">
+    <img src="assets/readme-banner.png" alt="A connected map of public data, APIs, books, weather, science, finance, and AI" width="100%">
+  </a>
+</p>
+
 > Find free APIs for weather, maps, books, research, finance, testing, open data, and more—with direct documentation and honest notes about keys, quotas, and terms.
 
 [![API catalog](https://img.shields.io/badge/catalog-76%20APIs-2563eb)](docs/data/apis.json)
