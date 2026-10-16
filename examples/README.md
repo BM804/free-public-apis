@@ -1,8 +1,8 @@
 # API examples in 18 programming languages
 
-Each example calls the same Open-Meteo Forecast API endpoint and prints the current temperature for New York City. This endpoint offers standard no-key access. Read the provider's current [API documentation](https://open-meteo.com/en/docs) and [pricing and usage terms](https://open-meteo.com/en/pricing) before building on it.
+Each example calls the same Open-Meteo Forecast API endpoint for New York City. Most parse and print the current temperature; C, C++, and Kotlin print the JSON response so you can inspect the provider's response format. This endpoint offers standard no-key access. Read the provider's current [API documentation](https://open-meteo.com/en/docs) and [pricing and usage terms](https://open-meteo.com/en/pricing) before building on it.
 
-Change the latitude and longitude query values in an example to request another location. The examples demonstrate making an HTTP GET request, checking for an error response, setting a timeout where supported, and reading JSON.
+Change the latitude and longitude query values in an example to request another location. The examples demonstrate making an HTTP GET request, checking for an error response, setting a timeout where supported, and parsing or printing JSON.
 
 ## Run locally
 
