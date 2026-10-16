@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Public APIs Directory — 69 APIs for Developers</title>
+  <meta name="description" content="Browse 69 free public APIs for weather, maps, books, research, finance, open data, testing, and more. Check API keys, free tiers, quotas, and official docs.">
+  <meta name="keywords" content="free APIs, free public APIs, free API list, free API directory, APIs for developers, no key API, free tier API, open data API">
+  <link rel="canonical" href="https://bm804.github.io/free-public-apis/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free Public APIs Directory">
+  <meta property="og:description" content="A practical, searchable directory of free public APIs with clear notes on keys, quotas, and provider terms.">
+  <meta property="og:url" content="https://bm804.github.io/free-public-apis/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebSite","name":"Free Public APIs Directory","description":"A searchable directory of free public APIs with official documentation and access notes.","url":"https://bm804.github.io/free-public-apis/","publisher":{"@type":"Person","name":"BM804"}}
+  </script>
+</head>
+<body>
+  <header class="hero">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="./">Free APIs<span>.</span></a>
+      <div class="nav-links"><a href="#directory">Directory</a><a href="#how-to-use">How to use</a><a href="https://github.com/BM804/free-public-apis">GitHub</a></div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">OPEN DIRECTORY · COMMUNITY MAINTAINED</p>
+      <h1>Find the right <span>free API</span> for your next project.</h1>
+      <p class="intro">Explore public APIs for weather, maps, books, research, finance, open data, testing, and more. Every listing points to provider docs and access notes.</p>
+      <a class="button" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
+      <div class="stats"><div><strong id="total-count">69</strong><span>catalog entries</span></div><div><strong id="category-count">—</strong><span>categories</span></div><div><strong>Open</strong><span>source catalog</span></div></div>
+    </div>
+  </header>
+  <main>
+    <section id="directory" class="section">
+      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Browse free public APIs</h2><p>Search by name, topic, or category. Filter APIs by whether they need an API key.</p></div></div>
+      <div class="filters">
+        <label class="search-label" for="search">Search APIs<input id="search" type="search" placeholder="Try weather, books, geocoding…" autocomplete="off"></label>
+        <label for="category">Category<select id="category"><option value="">All categories</option></select></label>
+        <label for="auth">API key<select id="auth"><option value="">Any access</option><option value="No">No key listed</option><option value="Optional">Optional key</option><option value="Yes">Key required</option></select></label>
+      </div>
+      <p id="result-count" class="result-count" aria-live="polite">Loading catalog…</p>
+      <div id="api-grid" class="api-grid" aria-live="polite"></div>
+      <noscript>The searchable directory needs JavaScript. Read the full catalog in the <a href="https://github.com/BM804/free-public-apis/blob/main/data/apis.json">repository JSON file</a>.</noscript>
+      <p class="caveat">Free access can include quotas, registration, attribution, or non-commercial limits. Always check the provider’s current rules before use.</p>
+    </section>
+    <section id="how-to-use" class="section how-section">
+      <p class="eyebrow">START BUILDING</p><h2>How to choose and use a free API</h2>
+      <div class="steps"><article><span>01</span><h3>Check the docs</h3><p>Confirm the endpoint, authentication, data format, and whether your project is eligible for no-cost access.</p></article><article><span>02</span><h3>Know the limits</h3><p>Read current quotas, rate limits, attribution rules, and commercial-use terms before you depend on a service.</p></article><article><span>03</span><h3>Build responsibly</h3><p>Set timeouts, handle errors, cache when allowed, and protect API keys outside your source code.</p></article></div>
+      <pre><code>import requests
+
+url = "https://api.open-meteo.com/v1/forecast"
+params = {"latitude": 40.71, "longitude": -74.01, "current": "temperature_2m"}
+response = requests.get(url, params=params, timeout=15)
+response.raise_for_status()
+print(response.json()["current"])</code></pre>
+      <p class="source-note">This directory is open source on <a href="https://github.com/BM804/free-public-apis">GitHub</a>. <a href="https://github.com/BM804/free-public-apis/blob/main/CONTRIBUTING.md">Contribute an API</a> with official documentation and current pricing evidence.</p>
+    </section>
+  </main>
+  <footer><a class="brand" href="./">Free APIs<span>.</span></a><p>Curated with care by <a href="https://github.com/BM804">BM804</a>. No guarantee of unlimited or permanent access.</p><p><a href="https://github.com/BM804/free-public-apis">Source code</a> · <a href="https://github.com/BM804/free-public-apis/blob/main/LICENSE">MIT License</a> · <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google Search guidance</a></p></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>

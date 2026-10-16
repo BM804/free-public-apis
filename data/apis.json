@@ -1,0 +1,628 @@
+{
+  "schema_version": 1,
+  "last_reviewed": "2026-10-16",
+  "notice": "Free access, quotas, registration, CORS, licensing, and commercial-use rules can change. Verify each provider's current terms before relying on it.",
+  "apis": [
+    {
+      "name": "Open-Meteo",
+      "category": "Weather",
+      "description": "Free forecast and historical weather data; no key for standard use",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "National Weather Service",
+      "category": "Weather",
+      "description": "US forecasts, alerts, observations and stations",
+      "authentication": "No",
+      "docs_url": "https://www.weather.gov/documentation/services-web-api",
+      "pricing_or_limits_url": "https://www.weather.gov/documentation/services-web-api",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "USGS Earthquake Hazards",
+      "category": "Science",
+      "description": "Earthquake events and GeoJSON feeds",
+      "authentication": "No",
+      "docs_url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "pricing_or_limits_url": "https://earthquake.usgs.gov/fdsnws/event/1/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "NASA APIs",
+      "category": "Space",
+      "description": "NASA imagery and datasets; demo key has a low shared quota",
+      "authentication": "Optional",
+      "docs_url": "https://api.nasa.gov/",
+      "pricing_or_limits_url": "https://api.nasa.gov/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "NASA EONET",
+      "category": "Space",
+      "description": "Near real-time natural event data",
+      "authentication": "No",
+      "docs_url": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "pricing_or_limits_url": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "OpenAlex",
+      "category": "Research",
+      "description": "Open scholarly works, authors, institutions and topics",
+      "authentication": "No",
+      "docs_url": "https://docs.openalex.org/",
+      "pricing_or_limits_url": "https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Crossref",
+      "category": "Research",
+      "description": "Metadata for scholarly publications",
+      "authentication": "No",
+      "docs_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "pricing_or_limits_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "arXiv",
+      "category": "Research",
+      "description": "Search and retrieve preprint metadata",
+      "authentication": "No",
+      "docs_url": "https://info.arxiv.org/help/api/index.html",
+      "pricing_or_limits_url": "https://info.arxiv.org/help/api/index.html",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "GBIF",
+      "category": "Nature",
+      "description": "Global biodiversity occurrence and species data",
+      "authentication": "No",
+      "docs_url": "https://techdocs.gbif.org/en/openapi/",
+      "pricing_or_limits_url": "https://www.gbif.org/terms",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Wikidata Query Service",
+      "category": "Knowledge",
+      "description": "Open structured knowledge via SPARQL",
+      "authentication": "No",
+      "docs_url": "https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual",
+      "pricing_or_limits_url": "https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "REST Countries",
+      "category": "Geography",
+      "description": "Country names, flags, currencies, languages and regions",
+      "authentication": "No",
+      "docs_url": "https://restcountries.com/",
+      "pricing_or_limits_url": "https://restcountries.com/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Nominatim",
+      "category": "Geocoding",
+      "description": "OpenStreetMap geocoding; strict public-server usage policy applies",
+      "authentication": "No",
+      "docs_url": "https://nominatim.org/release-docs/latest/api/Overview/",
+      "pricing_or_limits_url": "https://operations.osmfoundation.org/policies/nominatim/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Overpass API",
+      "category": "Maps",
+      "description": "Query OpenStreetMap features; public instances have fair-use limits",
+      "authentication": "No",
+      "docs_url": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "pricing_or_limits_url": "https://wiki.openstreetmap.org/wiki/Overpass_API#Public_Overpass_API_instances",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "OpenStreetMap",
+      "category": "Maps",
+      "description": "Map data and services; follow tile usage policy",
+      "authentication": "No",
+      "docs_url": "https://wiki.openstreetmap.org/wiki/API",
+      "pricing_or_limits_url": "https://operations.osmfoundation.org/policies/tiles/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "World Bank Indicators",
+      "category": "Economics",
+      "description": "Development indicators by country and year",
+      "authentication": "No",
+      "docs_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+      "pricing_or_limits_url": "https://datahelpdesk.worldbank.org/knowledgebase/articles/889392-about-the-indicators-api-documentation",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "OpenAQ",
+      "category": "Environment",
+      "description": "Open air-quality measurements; account/key requirements may vary by endpoint",
+      "authentication": "Optional",
+      "docs_url": "https://docs.openaq.org/",
+      "pricing_or_limits_url": "https://docs.openaq.org/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "US Data.gov",
+      "category": "Open Data",
+      "description": "Search catalog metadata for United States government datasets",
+      "authentication": "Optional",
+      "docs_url": "https://api.data.gov/",
+      "pricing_or_limits_url": "https://api.data.gov/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Europeana",
+      "category": "Culture",
+      "description": "Search European cultural heritage; registration/API key required",
+      "authentication": "Yes",
+      "docs_url": "https://api.europeana.eu/",
+      "pricing_or_limits_url": "https://pro.europeana.eu/page/search",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Library",
+      "category": "Books",
+      "description": "Book, author and edition search data",
+      "authentication": "No",
+      "docs_url": "https://openlibrary.org/developers/api",
+      "pricing_or_limits_url": "https://openlibrary.org/developers/api",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Gutendex",
+      "category": "Books",
+      "description": "Search Project Gutenberg public-domain books",
+      "authentication": "No",
+      "docs_url": "https://gutendex.com/",
+      "pricing_or_limits_url": "https://gutendex.com/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Google Books",
+      "category": "Books",
+      "description": "Search book metadata; Google Cloud quota and policy apply",
+      "authentication": "Yes",
+      "docs_url": "https://developers.google.com/books/docs/v1/using",
+      "pricing_or_limits_url": "https://developers.google.com/books/docs/v1/using",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "MusicBrainz",
+      "category": "Music",
+      "description": "Open music metadata; limit requests to one per second",
+      "authentication": "No",
+      "docs_url": "https://musicbrainz.org/doc/MusicBrainz_API",
+      "pricing_or_limits_url": "https://musicbrainz.org/doc/MusicBrainz_API/Rate_Limiting",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "iTunes Search",
+      "category": "Music",
+      "description": "Search Apple’s catalog for songs, artists, apps and more",
+      "authentication": "No",
+      "docs_url": "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/",
+      "pricing_or_limits_url": "https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/iTuneSearchAPI/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Hacker News",
+      "category": "Technology",
+      "description": "Public stories, comments and user data",
+      "authentication": "No",
+      "docs_url": "https://github.com/HackerNews/API",
+      "pricing_or_limits_url": "https://github.com/HackerNews/API",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "GitHub REST API",
+      "category": "Developer Tools",
+      "description": "Public repository, issue and user data; unauthenticated rate limit applies",
+      "authentication": "No",
+      "docs_url": "https://docs.github.com/en/rest",
+      "pricing_or_limits_url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "GitLab REST API",
+      "category": "Developer Tools",
+      "description": "Public projects and metadata; rate limits apply",
+      "authentication": "No",
+      "docs_url": "https://docs.gitlab.com/api/rest/",
+      "pricing_or_limits_url": "https://docs.gitlab.com/administration/settings/user_and_ip_rate_limits/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Stack Exchange API",
+      "category": "Developer Tools",
+      "description": "Questions, answers, users and sites; quota and backoff rules apply",
+      "authentication": "No",
+      "docs_url": "https://api.stackexchange.com/docs",
+      "pricing_or_limits_url": "https://api.stackexchange.com/docs/throttle",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "JSONPlaceholder",
+      "category": "Testing",
+      "description": "Fake REST API for tutorials and prototypes",
+      "authentication": "No",
+      "docs_url": "https://jsonplaceholder.typicode.com/guide/",
+      "pricing_or_limits_url": "https://jsonplaceholder.typicode.com/guide/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "DummyJSON",
+      "category": "Testing",
+      "description": "Fake products, users, posts and other sample data",
+      "authentication": "No",
+      "docs_url": "https://dummyjson.com/docs",
+      "pricing_or_limits_url": "https://dummyjson.com/docs",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "httpbin",
+      "category": "Testing",
+      "description": "HTTP request and response testing endpoints",
+      "authentication": "No",
+      "docs_url": "https://httpbin.org/",
+      "pricing_or_limits_url": "https://httpbin.org/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "ReqRes",
+      "category": "Testing",
+      "description": "Hosted REST API for testing; free plan and quotas can change",
+      "authentication": "No",
+      "docs_url": "https://reqres.in/",
+      "pricing_or_limits_url": "https://reqres.in/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "PokéAPI",
+      "category": "Games",
+      "description": "Pokémon game data; cache responses and respect service guidance",
+      "authentication": "No",
+      "docs_url": "https://pokeapi.co/docs/v2",
+      "pricing_or_limits_url": "https://pokeapi.co/docs/v2",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Star Wars API (SWAPI)",
+      "category": "Games",
+      "description": "Star Wars character, film and planet data",
+      "authentication": "No",
+      "docs_url": "https://swapi.dev/documentation",
+      "pricing_or_limits_url": "https://swapi.dev/documentation",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Trivia DB",
+      "category": "Games",
+      "description": "Trivia question database with token and request limits",
+      "authentication": "No",
+      "docs_url": "https://opentdb.com/api_config.php",
+      "pricing_or_limits_url": "https://opentdb.com/api_config.php",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "JokeAPI",
+      "category": "Entertainment",
+      "description": "Configurable jokes in JSON",
+      "authentication": "No",
+      "docs_url": "https://jokeapi.dev/",
+      "pricing_or_limits_url": "https://jokeapi.dev/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Dog CEO API",
+      "category": "Animals",
+      "description": "Random dog images and breed data",
+      "authentication": "No",
+      "docs_url": "https://dog.ceo/dog-api/documentation/",
+      "pricing_or_limits_url": "https://dog.ceo/dog-api/documentation/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "The Cat API",
+      "category": "Animals",
+      "description": "Cat images and breed data; free key and quotas may apply",
+      "authentication": "Optional",
+      "docs_url": "https://thecatapi.com/",
+      "pricing_or_limits_url": "https://thecatapi.com/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Brewery DB",
+      "category": "Food",
+      "description": "Search brewery data by city, state or name",
+      "authentication": "No",
+      "docs_url": "https://www.openbrewerydb.org/documentation",
+      "pricing_or_limits_url": "https://www.openbrewerydb.org/documentation",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Food Facts",
+      "category": "Food",
+      "description": "Community food product and nutrition database",
+      "authentication": "No",
+      "docs_url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "pricing_or_limits_url": "https://openfoodfacts.github.io/openfoodfacts-server/api/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "USDA FoodData Central",
+      "category": "Food",
+      "description": "US food composition data; free API key required",
+      "authentication": "Yes",
+      "docs_url": "https://fdc.nal.usda.gov/api-guide.html",
+      "pricing_or_limits_url": "https://fdc.nal.usda.gov/api-guide.html",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Frankfurter",
+      "category": "Finance",
+      "description": "Reference foreign-exchange rates from the European Central Bank",
+      "authentication": "No",
+      "docs_url": "https://www.frankfurter.app/docs/",
+      "pricing_or_limits_url": "https://www.frankfurter.app/docs/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "CoinGecko Demo API",
+      "category": "Finance",
+      "description": "Cryptocurrency market data; free demo plan requires API key and has quotas",
+      "authentication": "Yes",
+      "docs_url": "https://docs.coingecko.com/reference/introduction",
+      "pricing_or_limits_url": "https://www.coingecko.com/en/api/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "FRED",
+      "category": "Finance",
+      "description": "US economic time series; free API key required",
+      "authentication": "Yes",
+      "docs_url": "https://fred.stlouisfed.org/docs/api/fred/",
+      "pricing_or_limits_url": "https://fred.stlouisfed.org/docs/api/api_key.html",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "ipify",
+      "category": "Networking",
+      "description": "Return the caller’s public IP address",
+      "authentication": "No",
+      "docs_url": "https://www.ipify.org/",
+      "pricing_or_limits_url": "https://www.ipify.org/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "QRServer",
+      "category": "Utilities",
+      "description": "Create and decode QR codes; service terms and limits apply",
+      "authentication": "No",
+      "docs_url": "https://goqr.me/api/",
+      "pricing_or_limits_url": "https://goqr.me/api/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Pexels",
+      "category": "Media",
+      "description": "Stock photo and video search; free API key with rate limits",
+      "authentication": "Yes",
+      "docs_url": "https://www.pexels.com/api/documentation/",
+      "pricing_or_limits_url": "https://www.pexels.com/api/documentation/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Unsplash",
+      "category": "Media",
+      "description": "Photo search and image metadata; developer key and API rules apply",
+      "authentication": "Yes",
+      "docs_url": "https://unsplash.com/documentation",
+      "pricing_or_limits_url": "https://unsplash.com/documentation",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Google Fonts Developer API",
+      "category": "Design",
+      "description": "Search Google Fonts metadata; free API key required",
+      "authentication": "Yes",
+      "docs_url": "https://developers.google.com/fonts/docs/developer_api",
+      "pricing_or_limits_url": "https://developers.google.com/fonts/docs/developer_api",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Public Suffix List",
+      "category": "Networking",
+      "description": "Fetch public suffix data for domain parsing; not a conventional REST API",
+      "authentication": "No",
+      "docs_url": "https://publicsuffix.org/list/",
+      "pricing_or_limits_url": "https://publicsuffix.org/list/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Common Crawl Index",
+      "category": "Open Data",
+      "description": "Search crawl indexes and retrieve web archive metadata",
+      "authentication": "No",
+      "docs_url": "https://index.commoncrawl.org/",
+      "pricing_or_limits_url": "https://commoncrawl.org/get-started",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Internet Archive",
+      "category": "Culture",
+      "description": "Search and access archive metadata and media",
+      "authentication": "No",
+      "docs_url": "https://archive.org/developers/",
+      "pricing_or_limits_url": "https://archive.org/developers/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "OpenStreetMap Nominatim alternative: Photon",
+      "category": "Geocoding",
+      "description": "Open-source geocoder backed by OpenStreetMap; public demo is limited",
+      "authentication": "No",
+      "docs_url": "https://photon.komoot.io/",
+      "pricing_or_limits_url": "https://github.com/komoot/photon",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open-Meteo Air Quality",
+      "category": "Environment",
+      "description": "Global air-quality forecast and historical data",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs/air-quality-api",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open-Meteo Marine",
+      "category": "Weather",
+      "description": "Marine weather forecasts and wave data",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs/marine-weather-api",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open-Meteo Climate",
+      "category": "Climate",
+      "description": "Climate model data and projections",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs/climate-api",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "USGS Water Services",
+      "category": "Environment",
+      "description": "Water observations and monitoring data",
+      "authentication": "No",
+      "docs_url": "https://waterservices.usgs.gov/",
+      "pricing_or_limits_url": "https://waterservices.usgs.gov/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "NOAA Climate Data Online",
+      "category": "Climate",
+      "description": "Historical climate datasets; token required for API",
+      "authentication": "Yes",
+      "docs_url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+      "pricing_or_limits_url": "https://www.ncei.noaa.gov/cdo-web/webservices/v2",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "OpenAlex Topics API",
+      "category": "Research",
+      "description": "Open research metadata and topic discovery",
+      "authentication": "No",
+      "docs_url": "https://docs.openalex.org/",
+      "pricing_or_limits_url": "https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Library Covers API",
+      "category": "Books",
+      "description": "Book cover images by ISBN, OLID or other identifiers",
+      "authentication": "No",
+      "docs_url": "https://openlibrary.org/dev/docs/api/covers",
+      "pricing_or_limits_url": "https://openlibrary.org/dev/docs/api/covers",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "MediaWiki Action API",
+      "category": "Knowledge",
+      "description": "Query Wikipedia and other MediaWiki installations",
+      "authentication": "No",
+      "docs_url": "https://www.mediawiki.org/wiki/API:Main_page",
+      "pricing_or_limits_url": "https://www.mediawiki.org/wiki/API:Etiquette",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "GDELT",
+      "category": "News",
+      "description": "Global news and event data; review query and usage guidance",
+      "authentication": "No",
+      "docs_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "pricing_or_limits_url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "US Census Data API",
+      "category": "Open Data",
+      "description": "US population and census data; many datasets need no key",
+      "authentication": "Optional",
+      "docs_url": "https://www.census.gov/data/developers/data-sets.html",
+      "pricing_or_limits_url": "https://www.census.gov/data/developers/guidance/api-user-guide.html",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "NOAA Weather API",
+      "category": "Weather",
+      "description": "US weather forecasts and alerts; account key required",
+      "authentication": "Yes",
+      "docs_url": "https://www.weather.gov/documentation/services-web-api",
+      "pricing_or_limits_url": "https://www.weather.gov/documentation/services-web-api",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open-Meteo Geocoding",
+      "category": "Geography",
+      "description": "Search locations for weather coordinates",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs/geocoding-api",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open Library Search",
+      "category": "Books",
+      "description": "Search books by title, author, subject or ISBN",
+      "authentication": "No",
+      "docs_url": "https://openlibrary.org/dev/docs/api/search",
+      "pricing_or_limits_url": "https://openlibrary.org/dev/docs/api/search",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Google Books Volumes",
+      "category": "Books",
+      "description": "Retrieve book volume metadata; quotas apply",
+      "authentication": "Yes",
+      "docs_url": "https://developers.google.com/books/docs/v1/reference/volumes",
+      "pricing_or_limits_url": "https://developers.google.com/books/docs/v1/using",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "arXiv Atom API",
+      "category": "Research",
+      "description": "Query arXiv scholarly archive using Atom feeds",
+      "authentication": "No",
+      "docs_url": "https://info.arxiv.org/help/api/user-manual.html",
+      "pricing_or_limits_url": "https://info.arxiv.org/help/api/user-manual.html",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "ExchangeRate API (open.er-api)",
+      "category": "Finance",
+      "description": "Reference exchange rates; free tier availability and limits should be checked",
+      "authentication": "Optional",
+      "docs_url": "https://www.exchangerate-api.com/docs/overview",
+      "pricing_or_limits_url": "https://www.exchangerate-api.com/pricing",
+      "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Open-Meteo Forecast",
+      "category": "Weather",
+      "description": "Hourly and daily forecast with coordinates",
+      "authentication": "No",
+      "docs_url": "https://open-meteo.com/en/docs",
+      "pricing_or_limits_url": "https://open-meteo.com/en/pricing",
+      "checked_on": "2026-10-16"
+    }
+  ]
+}

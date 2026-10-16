@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bm804.github.io/free-public-apis/sitemap.xml
