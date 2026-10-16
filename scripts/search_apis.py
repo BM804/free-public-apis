@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 
-CATALOG = Path(__file__).resolve().parents[1] / "data" / "apis.json"
+CATALOG = Path(__file__).resolve().parents[1] / "docs" / "data" / "apis.json"
 
 
 def load_catalog() -> list[dict[str, str]]:

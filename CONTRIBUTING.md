@@ -5,7 +5,7 @@ Thanks for helping keep this free API directory accurate and practical.
 ## Add or update an API
 
 1. Read the provider’s official API documentation and its pricing, rate-limit, and acceptable-use pages.
-2. Edit `data/apis.json`. Keep the existing field names and JSON formatting.
+2. Edit `docs/data/apis.json`. Keep the existing field names and JSON formatting.
 3. Use a short, factual description. Set `authentication` to `No`, `Optional`, or `Yes`; use `Optional` when public access exists but keys unlock higher limits or some endpoints.
 4. Set `checked_on` to the date you checked the provider’s current terms, in `YYYY-MM-DD` format.
 5. Include the canonical docs URL and a pricing/limits/policy URL. If a policy is not published separately, link to the docs and say so in the pull request.

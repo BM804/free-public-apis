@@ -2,13 +2,13 @@
 
 > Find free APIs for weather, maps, books, research, finance, testing, open data, and more—with direct documentation and honest notes about keys, quotas, and terms.
 
-[![API catalog](https://img.shields.io/badge/catalog-69%20APIs-2563eb)](data/apis.json)
+[![API catalog](https://img.shields.io/badge/catalog-69%20APIs-2563eb)](docs/data/apis.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 **Looking for free APIs to use in a project?** This human-curated directory helps developers find public APIs that offer no-cost access, an open-data endpoint, or a clearly identified free tier. Each entry links to provider documentation and a page describing pricing, quotas, or usage policy when available.
 
-**Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](data/apis.json) · [Python search tool](scripts/search_apis.py)
+**Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](docs/data/apis.json) · [Python search tool](scripts/search_apis.py)
 
 ## Quick start
 
@@ -63,7 +63,7 @@ The catalog currently includes **69 entries across 29 categories**. The director
 | Weather | National Weather Service, NOAA Weather API, Open-Meteo, Open-Meteo Forecast, Open-Meteo Marine |
 
 
-For the full searchable list and exact provider links, see [data/apis.json](data/apis.json) or visit the [directory site](https://bm804.github.io/free-public-apis/).
+For the full searchable list and exact provider links, see [docs/data/apis.json](docs/data/apis.json) or visit the [directory site](https://bm804.github.io/free-public-apis/).
 
 ## What “free” means here
 
@@ -82,7 +82,7 @@ python scripts/search_apis.py books --no-key
 
 ## Data format
 
-`data/apis.json` is the source of truth. It contains a version, review date, caution notice, and entries with `name`, `category`, `description`, `authentication`, `docs_url`, `pricing_or_limits_url`, and `checked_on`. You can reuse the catalog in scripts and prototypes; follow the terms and attribution requirements of each API provider.
+`docs/data/apis.json` is the source of truth. It contains a version, review date, caution notice, and entries with `name`, `category`, `description`, `authentication`, `docs_url`, `pricing_or_limits_url`, and `checked_on`. You can reuse the catalog in scripts and prototypes; follow the terms and attribution requirements of each API provider.
 
 ## SEO and discovery
 

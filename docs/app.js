@@ -35,7 +35,7 @@ function render() {
 
 async function start() {
   try {
-    const response = await fetch("../data/apis.json");
+    const response = await fetch("data/apis.json");
     if (!response.ok) throw new Error("Catalog request failed: " + response.status);
     const payload = await response.json();
     apis = payload.apis;
