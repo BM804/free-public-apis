@@ -10,6 +10,8 @@
 
 **Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](docs/data/apis.json) · [Python search tool](scripts/search_apis.py)
 
+**Code examples:** [Use a public API locally in 18 programming languages](examples/README.md). Each language folder contains a runnable example and the guide lists setup requirements and run commands.
+
 ## Quick start
 
 1. Pick an API and read its official documentation and current terms.

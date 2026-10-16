@@ -1,0 +1,5 @@
+weather
+weather.exe
+*.jar
+java/target/
+**/*.class
