@@ -76,12 +76,14 @@ main { max-width:1168px; margin:auto; padding:0 24px; }
 .directory-count { flex:none; margin-bottom:7px; padding:8px 12px; border:1px solid #6ef0ca39; border-radius:999px; background:#12273a; color:#c4d5e7; font-size:.84rem; }
 .directory-count span { color:var(--accent); }
 .directory-count strong { color:white; }
-.filters { display:grid; grid-template-columns:2fr 1fr 1fr; gap:14px; margin:32px 0 12px; }
+.filters { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:14px; margin:32px 0 12px; }
 .filters label { font-size:.85rem; font-weight:700; color:#c7d4e2; }
 .filters input, .filters select { display:block; width:100%; margin-top:7px; padding:12px; border:1px solid var(--line); border-radius:10px; background:#101c2e; color:var(--text); font:inherit; transition:border-color .2s ease, box-shadow .2s ease, background .2s ease; }
 .filters input:focus, .filters select:focus { outline:none; border-color:var(--accent); background:#13233a; box-shadow:0 0 0 3px #6ef0ca1e; }
 .result-count { display:inline-flex; margin:14px 0; padding:5px 10px; border:1px solid #273951; border-radius:999px; background:#0e1929; color:#c6d5e5; font-size:.85rem; }
 .api-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
+.show-more { display:flex; width:max-content; margin:24px auto 0; }
+.show-more[hidden] { display:none; }
 .api-card { position:relative; overflow:hidden; min-height:235px; padding:19px; border:1px solid #2a3a51; border-radius:15px; background:linear-gradient(145deg,#142238 0%,#101a2b 78%); animation: rise-in .45s both; transition:transform .22s ease, border-color .22s ease, box-shadow .22s ease; }
 .api-card::before { position:absolute; top:0; left:18px; right:18px; height:2px; content:""; border-radius:0 0 99px 99px; background:linear-gradient(90deg,var(--accent),var(--blue),var(--violet)); opacity:.48; transition:opacity .2s ease; }
 .api-card:hover { transform:translateY(-5px); border-color:#6ef0ca70; box-shadow:0 18px 42px #0005; }
@@ -144,3 +146,4 @@ footer p { margin:6px 0; }
   .datasets-section::after { top:auto; right:7%; bottom:6%; font-size:4rem; opacity:.4; }
   .hero::before { right:-16rem; }
 }
+

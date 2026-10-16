@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Free Public APIs Directory — 76 APIs for Developers</title>
-  <meta name="description" content="Browse 76 free public APIs for AI and LLMs, weather, maps, books, research, finance, open data, testing, and more. Check API keys, free tiers, quotas, and official docs.">
+  <title>Free Public APIs Directory — Browse 2,000+ API Listings</title>
+  <meta name="description" content="Search a curated directory of free-access APIs plus 2,000+ community API listings across AI, weather, maps, books, research, finance, open data, and more. Check provider links and authentication.">
   <meta name="keywords" content="free APIs, free public APIs, free API list, free API directory, free LLM APIs, free AI APIs, Gemini API free tier, APIs for developers, no key API, open data API">
   <link rel="canonical" href="https://bm804.github.io/free-public-apis/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Free Public APIs Directory">
-  <meta property="og:description" content="A searchable directory of 76 free public APIs, including LLM and AI APIs, with notes on keys, quotas, and provider terms.">
+  <meta property="og:description" content="Search curated free-access APIs and 2,000+ community catalog listings, with links to provider pages and authentication notes.">
   <meta property="og:url" content="https://bm804.github.io/free-public-apis/">
   <meta name="twitter:card" content="summary">
   <meta name="theme-color" content="#0b1220">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"WebSite","name":"Free Public APIs Directory","description":"A searchable directory of free public APIs with official documentation and access notes.","url":"https://bm804.github.io/free-public-apis/","publisher":{"@type":"Person","name":"BM804"}}
   </script>
@@ -28,7 +28,7 @@
     <div class="hero-content">
       <p class="eyebrow">OPEN DIRECTORY · COMMUNITY MAINTAINED</p>
       <h1>Find the right <span>free API</span> for your next project.</h1>
-      <p class="intro">Explore public APIs for AI and LLMs, weather, maps, books, research, finance, open data, testing, and more. Every listing points to provider docs and access notes.</p>
+      <p class="intro">Explore curated free-access APIs alongside 2,000+ listings from a community-maintained catalog. Browse AI and LLMs, weather, maps, books, research, finance, open data, and more.</p>
       <a class="button" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
       <div class="hero-topics" aria-label="Popular categories">
         <button type="button" data-category="AI &amp; LLM"><span aria-hidden="true">🤖</span> AI &amp; LLM</button>
@@ -37,21 +37,24 @@
         <button type="button" data-category="Finance"><span aria-hidden="true">💹</span> Finance</button>
         <button type="button" data-category="Maps"><span aria-hidden="true">🗺️</span> Maps</button>
       </div>
-      <div class="stats"><div><strong id="total-count">76</strong><span>catalog entries</span></div><div><strong id="category-count">—</strong><span>categories</span></div><div><strong>Open</strong><span>source catalog</span></div></div>
+      <div class="stats"><div><strong id="total-count">2,211</strong><span>API listings</span></div><div><strong id="category-count">—</strong><span>categories</span></div><div><strong>Open</strong><span>source catalog</span></div></div>
     </div>
   </header>
   <main>
     <section id="directory" class="section">
-      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Browse free public APIs</h2><p>Search by name, topic, or category. Filter APIs by whether they need an API key.</p></div><span class="directory-count"><span aria-hidden="true">✦</span> <strong id="directory-total">76</strong> hand-picked APIs</span></div>
+      <div class="section-heading"><div><p class="eyebrow">THE DIRECTORY</p><h2>Browse API listings</h2><p>Search by name, topic, or category. Filter by authentication and catalog source. Community listings are not verified as free.</p></div><span class="directory-count"><span aria-hidden="true">✦</span> <strong id="directory-total">2,211</strong> listings</span></div>
       <div class="filters">
         <label class="search-label" for="search">Search APIs<input id="search" type="search" placeholder="Try weather, books, geocoding…" autocomplete="off"></label>
         <label for="category">Category<select id="category"><option value="">All categories</option></select></label>
-        <label for="auth">API key<select id="auth"><option value="">Any access</option><option value="No">No key listed</option><option value="Optional">Optional key</option><option value="Yes">Key required</option></select></label>
+        <label for="auth">Authentication<select id="auth"><option value="">Any access</option><option value="No">No auth listed</option><option value="Optional">Optional auth</option><option value="Yes">Auth required</option></select></label>
+        <label for="catalog">Catalog<select id="catalog"><option value="">All catalogs</option><option value="curated">BM804 curated</option><option value="community">public-apis community</option></select></label>
       </div>
       <p id="result-count" class="result-count" aria-live="polite">Loading catalog…</p>
       <div id="api-grid" class="api-grid" aria-live="polite"></div>
+      <button id="show-more" class="button show-more" type="button" hidden>Show more listings</button>
       <noscript>The searchable directory needs JavaScript. Read the full catalog in the <a href="https://github.com/BM804/free-public-apis/blob/main/docs/data/apis.json">repository JSON file</a>.</noscript>
-      <p class="caveat">Free access can include quotas, registration, attribution, or non-commercial limits. Always check the provider’s current rules before use.</p>
+      <p class="caveat">The BM804 list highlights APIs with documented no-cost access. The community snapshot is for discovery only and may include paid services. Always check provider pricing, terms, quotas, and licenses before use.</p>
+      <p class="source-note">Community snapshot: <a href="https://github.com/public-apis/public-apis">public-apis/public-apis</a>, licensed under MIT. <a href="data/community-apis.json">View the imported data</a>. Snapshot date: 2026-10-16.</p>
     </section>
     <section id="datasets" class="section datasets-section">
       <p class="eyebrow">IN PROGRESS</p>
@@ -73,6 +76,7 @@ print(response.json()["current"])</code></pre>
     </section>
   </main>
   <footer><a class="brand" href="./">Free APIs<span>.</span></a><p>Curated with care by <a href="https://github.com/BM804">BM804</a>. No guarantee of unlimited or permanent access.</p><p><a href="https://github.com/BM804/free-public-apis">Source code</a> · <a href="https://github.com/BM804/free-public-apis/blob/main/LICENSE">MIT License</a> · <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Google Search guidance</a></p></footer>
-  <script src="app.js?v=3" defer></script>
+  <script src="app.js?v=4" defer></script>
 </body>
 </html>
+

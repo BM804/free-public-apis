@@ -8,14 +8,15 @@
 
 > Find free APIs for weather, maps, books, research, finance, testing, open data, and more—with direct documentation and honest notes about keys, quotas, and terms.
 
-[![API catalog](https://img.shields.io/badge/catalog-76%20APIs-2563eb)](docs/data/apis.json)
+[![Curated APIs](https://img.shields.io/badge/BM804%20curated-76%20APIs-2563eb)](docs/data/apis.json)
+[![Community snapshot](https://img.shields.io/badge/community%20snapshot-2%2C135%20listings-8b5cf6)](docs/data/community-apis.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Community catalog](https://img.shields.io/badge/explore-community%20API%20list-8b5cf6?logo=github)](https://github.com/public-apis/public-apis)
 
 **Looking for free APIs to use in a project?** This human-curated directory helps developers find public APIs that offer no-cost access, an open-data endpoint, or a clearly identified free tier. Each entry links to provider documentation and a page describing pricing, quotas, or usage policy when available.
 
-**Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [Machine-readable JSON catalog](docs/data/apis.json) · [Python search tool](scripts/search_apis.py)
+**Browse:** [API directory website](https://bm804.github.io/free-public-apis/) · [BM804 curated JSON](docs/data/apis.json) · [Imported community catalog JSON](docs/data/community-apis.json) · [Python search tool](scripts/search_apis.py)
 
 <p align="center"><strong>Need an even wider list?</strong> Explore the community-maintained <a href="https://github.com/public-apis/public-apis">public-apis/public-apis</a> directory too.</p>
 
@@ -78,7 +79,7 @@ These providers currently document a no-cost tier, trial access, or credits. Lim
 
 ## Browse by category
 
-The catalog currently includes **76 entries across 30 categories**. The directory website can filter by name, category, or whether a key is needed.
+The BM804 curated catalog includes **76 entries across 30 categories**. The imported community snapshot adds **2,135 listings across 51 categories** from the upstream README. The website searches both catalogs and can filter by name, category, authentication, and source.
 
 | Category | APIs |
 |---|---|
@@ -118,11 +119,13 @@ The catalog currently includes **76 entries across 30 categories**. The director
 I’m preparing a separate directory of free public dataset sources, with source links and notes about licensing, attribution, and access. Follow the [website’s dataset section](https://bm804.github.io/free-public-apis/#datasets) for updates.
 
 
-For the full searchable list and exact provider links, see [docs/data/apis.json](docs/data/apis.json) or visit the [directory site](https://bm804.github.io/free-public-apis/).
+For the BM804-curated entries, see [docs/data/apis.json](docs/data/apis.json). For the imported community snapshot, see [docs/data/community-apis.json](docs/data/community-apis.json), or search both catalogs on the [directory site](https://bm804.github.io/free-public-apis/).
 
-## Explore the community API directory
+## Imported community API catalog
 
-The [public-apis/public-apis repository](https://github.com/public-apis/public-apis) is a much broader, community-maintained index. Its README organizes API discovery by topic and also includes APILayer products and MCP server listings. Browse a few useful sections:
+This repository includes a dated, machine-readable snapshot of the API category tables from [`public-apis/public-apis`](https://github.com/public-apis/public-apis), a community-maintained directory. The snapshot contains **2,135 entries in 51 categories** and powers the community filter on the [directory website](https://bm804.github.io/free-public-apis/#directory). Open [the imported JSON](docs/data/community-apis.json) to browse or reuse the data. It records each listing's name, category, description, source URL, authentication label, HTTPS and CORS fields.
+
+Browse the upstream project directly by topic:
 
 <table>
   <tr>
@@ -141,7 +144,7 @@ The [public-apis/public-apis repository](https://github.com/public-apis/public-a
 
 <p align="center"><a href="https://github.com/public-apis/public-apis/blob/master/LICENSE">Upstream license: MIT</a> · <a href="https://github.com/public-apis/public-apis/blob/master/CONTRIBUTING.md">Contribute to the community list</a></p>
 
-This project keeps its own smaller catalog focused on entries with clear provider documentation and explicit access notes. The community list is a useful place to discover more options; a listing does not guarantee that an API is currently free, unlimited, or suitable for commercial use. Always check the provider’s terms and pricing before integrating it.
+The snapshot was imported on **2026-10-16** from the upstream README. See [`LICENSES/public-apis-MIT.txt`](LICENSES/public-apis-MIT.txt) for its license notice. The upstream catalog includes APIs with different access models; inclusion here does **not** mean an API is free, available, secure, or suitable for commercial use. Verify the provider's current documentation, pricing, terms, and licenses before use. For no-cost access notes reviewed for this project, use the separate [BM804 curated catalog](docs/data/apis.json).
 
 ## What “free” means here
 
@@ -160,7 +163,7 @@ python scripts/search_apis.py books --no-key
 
 ## Data format
 
-`docs/data/apis.json` is the source of truth. It contains a version, review date, caution notice, and entries with `name`, `category`, `description`, `authentication`, `docs_url`, `pricing_or_limits_url`, and `checked_on`. You can reuse the catalog in scripts and prototypes; follow the terms and attribution requirements of each API provider.
+`docs/data/apis.json` is the BM804 curated catalog. `docs/data/community-apis.json` is the attributed community snapshot and contains its source URL, MIT license, snapshot date, caution notice, and API listing fields. The website loads both files. Follow the terms and attribution requirements of the upstream project and each API provider when reusing data.
 
 ## SEO and discovery
 
@@ -173,3 +176,4 @@ Found a free API or spotted a pricing change? See [CONTRIBUTING.md](CONTRIBUTING
 ## License
 
 The catalog text and code in this repository are available under the [MIT License](LICENSE). API names, data, terms, and trademarks remain with their respective providers; check each provider’s license and attribution rules.
+
