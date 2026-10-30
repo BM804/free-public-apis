@@ -686,6 +686,15 @@
       "docs_url": "https://docs.mistral.ai/getting-started/quickstarts/developer/first-api-request",
       "pricing_or_limits_url": "https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key",
       "checked_on": "2026-10-16"
+    },
+    {
+      "name": "Pangolinfo Amazon Scraper API",
+      "category": "Research",
+      "description": "Amazon product, search, review and seller data over REST. Sign-up and API key required; the free plan includes 60 credits/month with no card. Terms exclude users in Mainland China and restrict resale/service-provider use.",
+      "authentication": "Yes",
+      "docs_url": "https://docs.pangolinfo.com/en-api-reference/amazonApi/submit",
+      "pricing_or_limits_url": "https://www.pangolinfo.com/pricing/",
+      "checked_on": "2026-10-30"
     }
   ]
 }
