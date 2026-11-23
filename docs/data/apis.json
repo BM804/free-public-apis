@@ -686,6 +686,15 @@
       "docs_url": "https://docs.mistral.ai/getting-started/quickstarts/developer/first-api-request",
       "pricing_or_limits_url": "https://docs.mistral.ai/getting-started/quickstarts/studio/activate-and-generate-api-key",
       "checked_on": "2026-10-16"
+    },
+    {
+      "name": "FairValid",
+      "category": "Email",
+      "description": "Email verification with signup, an API key and 300 shared free monthly credits; paid top-ups available",
+      "authentication": "Yes",
+      "docs_url": "https://fairvalid.com/en/help/api",
+      "pricing_or_limits_url": "https://fairvalid.com/en/pricing",
+      "checked_on": "2026-11-23"
     }
   ]
 }
