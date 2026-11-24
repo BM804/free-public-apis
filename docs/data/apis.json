@@ -427,6 +427,15 @@
       "checked_on": "2026-10-16"
     },
     {
+      "name": "Vertov",
+      "category": "Media",
+      "description": "List workspace recordings, upload videos for share links, and receive video events via webhooks",
+      "authentication": "Yes",
+      "docs_url": "https://vertov.app/docs/api",
+      "pricing_or_limits_url": "https://vertov.app/pricing",
+      "checked_on": "2026-11-24"
+    },
+    {
       "name": "Google Fonts Developer API",
       "category": "Design",
       "description": "Search Google Fonts metadata; free API key required",
